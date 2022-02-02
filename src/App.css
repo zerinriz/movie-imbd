@@ -1,0 +1,40 @@
+.App {
+  text-align: center;
+}
+body {
+  background-color: rgb(1, 33, 92);
+}
+
+.movie {
+  width: 15rem;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  color: white;
+  background-color: rgb(82, 90, 161);
+  box-shadow: 5px 5px 5px rgb(1, 9, 75);
+}
+
+.movie-over {
+  color: black;
+  position: absolute;
+  padding: 1rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out;
+  max-height: 100%;
+  overflow: auto;
+}
+
+.movie:hover .movie-over {
+  transform: translateY(0%);
+}
+
+.movie-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
